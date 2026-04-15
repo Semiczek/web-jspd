@@ -1,0 +1,486 @@
+﻿{
+  "common": {
+    "brand": "JSPD Holding",
+    "contactEmail": "info@jspd.cz",
+    "footerLeft": "JSPD Holding",
+    "footerRight": "Holding, zakázky, provoz a vlastní systém v jednom celku.",
+    "footerNote": "Každá větev stojí na reálné práci, lidech a výsledku."
+  },
+  "header": {
+    "groupLabel": "Holding | provoz | systém | zakázky",
+    "contactCta": "Kontakt",
+    "languageLabel": "Přepnout jazyk"
+  },
+  "nav": {
+    "home": "Holding",
+    "cleaning": "Cleaning",
+    "construction": "Stavby",
+    "tech": "Tech",
+    "bakery": "Gastro",
+    "cafe": "Provoz",
+    "demo": "Demo",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "badge": "JSPD Holding",
+    "heroTitle": "Provoz, zakázky a systém pod jednou značkou",
+    "heroText": "JSPD Holding spojuje úklid, vývoj vlastních nástrojů a gastro provoz. Neprodáváme služby na papíře. Každá část běží v reálném provozu.",
+    "primaryCta": "Prohlédnout JSPD Cleaning",
+    "secondaryCta": "Prohlédnout JSPD Tech",
+    "sideTitle": "Co dnes tvoří JSPD",
+    "sideText": "Holding nestojí na jedné službě. Každá část má vlastní práci, vlastní lidi a vlastní odpovědnost za výsledek.",
+    "sideItems": [
+      "JSPD Cleaning – úklid pro firmy, provozy a stavby",
+      "JSPD Tech – weby, interní systémy a Android aplikace",
+      "Gastro – výroba, prodej a každodenní provoz"
+    ],
+    "sideNote": "Tenhle web stojí na tom, co už funguje. Další obsah jen rozšíří to, co je v provozu teď.",
+    "pillarsTitle": "Hlavní pilíře holdingu",
+    "pillarsLead": "Každá větev řeší jinou práci. Dohromady drží jeden funkční celek.",
+    "pillars": [
+      {
+        "index": "01",
+        "title": "JSPD Cleaning",
+        "text": "Úklid pro firmy, provozy, gastro a stavby. Důležitý je termín, kontrola a hotový výsledek."
+      },
+      {
+        "index": "02",
+        "title": "JSPD Tech",
+        "text": "Vyvíjíme weby, aplikace a interní systémy. Ne pro prezentaci. Pro každodenní použití."
+      },
+      {
+        "index": "03",
+        "title": "Gastro provozy",
+        "text": "Výroba, prodej a práce se zákazníkem v reálném tempu. Ne doplněk. Samostatný provoz."
+      }
+    ],
+    "whyTitle": "Proč to funguje",
+    "whyText": "Za značkou nejsou prázdné obory. Jsou za ní zakázky, směny, provoz a systém, který používáme sami.",
+    "whyItems": [
+      "Každá větev má jasnou roli",
+      "Za webem jsou skutečné provozy a projekty",
+      "Systém vzniká z práce, ne z teorie"
+    ],
+    "projectsTitle": "Aktuální projekty a směry",
+    "projectsLead": "Vedle provozu stavíme i vlastní digitální výstupy.",
+    "projects": [
+      {
+        "tag": "Android aplikace",
+        "title": "PD Šternberk",
+        "text": "Interní aplikace pro běžnou práci v provozu.",
+        "href": "https://play.google.com/store/apps/details?id=cz.pdsternberk.sternberk&hl=cs"
+      },
+      {
+        "tag": "Android aplikace",
+        "title": "PD Litovel",
+        "text": "Druhá firemní aplikace pro rychlý přehled a jednoduché použití.",
+        "href": "https://play.google.com/store/apps/details?id=cz.pdlitovel.litovel&hl=cs"
+      },
+      {
+        "tag": "Web / systém",
+        "title": "JSPD Cleaning a Demo Hub",
+        "text": "Web úklidové větve a základ pro další prodej systému."
+      },
+      {
+        "tag": "Tvorba webu",
+        "title": "jspd.cz",
+        "text": "Hlavní web JSPD Holdingu.",
+        "href": "https://jspd.cz"
+      },
+      {
+        "tag": "Tvorba webu",
+        "title": "jspdcleaning.cz",
+        "text": "Web úklidové divize s propojením na SaaS systém.",
+        "href": "https://jspdcleaning.cz"
+      }
+    ],
+    "ctaTitle": "Chcete řešit konkrétní věc?",
+    "ctaText": "Podíváme se na provoz, zadání a další krok. Bez omáčky.",
+    "ctaPrimary": "Zobrazit demo",
+    "ctaSecondary": "Kontaktovat nás"
+  },
+  "cleaning": {
+    "badge": "JSPD Cleaning",
+    "heroTitle": "Úklid, na který je spoleh",
+    "heroText": "Děláme úklid pro firmy, provozy, gastro a stavby. Řešíme termín, průběh a výsledek. Ne dojmy.",
+    "heroPoints": [
+      "Firmy a provozy",
+      "Gastro zázemí",
+      "Stavby a zásahy"
+    ],
+    "cardsTitle": "Kde dáváme smysl",
+    "cardsLead": "Tam, kde je potřeba práce bez výmluv.",
+    "cards": [
+      {
+        "index": "01",
+        "title": "Pravidelný úklid",
+        "text": "Pro firmy a objekty, kde musí fungovat rytmus, kontrola a domluva."
+      },
+      {
+        "index": "02",
+        "title": "Gastro a provozní zázemí",
+        "text": "Prostory, kde rozhoduje rychlost, důslednost a přizpůsobení provozu."
+      },
+      {
+        "index": "03",
+        "title": "Stavby a jednorázové zásahy",
+        "text": "Generální úklid, dokončení po stavbě a zásahy, kde je vidět rozdíl."
+      }
+    ],
+    "infoTitle": "Jak pracujeme",
+    "infoText": "Řešíme domluvu, nástup a hotový výsledek. To je celé.",
+    "infoItems": [
+      "Spolehlivý průběh práce",
+      "Řešení podle typu objektu",
+      "Výsledek, který jde zkontrolovat"
+    ],
+    "featurePanel": {
+      "title": "Detailní web JSPD Cleaning",
+      "text": "Samostatný web úklidové divize s detailnějším přehledem služeb a realizací.",
+      "href": "https://jspdcleaning.cz",
+      "label": "Otevřít jspdcleaning.cz"
+    },
+    "hideContactBox": true,
+    "ctaTitle": "Potřebujete úklid pro firmu nebo provoz?",
+    "ctaText": "Pošlete zadání. Řekneme, co dává smysl a jak to vzít.",
+    "ctaPrimary": "Kontaktovat nás",
+    "ctaSecondary": "Zpět na hlavní web"
+  },
+  "construction": {
+    "badge": "Stavební divize",
+    "heroTitle": "Stavby jako samostatná divize",
+    "heroText": "Stavební část řeší práci v terénu, realizaci a návaznost na další provoz holdingu. Jde o konkrétní zakázky, lidi a výsledek na místě.",
+    "heroPoints": [
+      "Realizace",
+      "Koordinace",
+      "Dokončení"
+    ],
+    "cardsTitle": "Co tahle divize řeší",
+    "cardsLead": "Ne prezentaci. Reálnou práci na zakázce.",
+    "cards": [
+      {
+        "index": "01",
+        "title": "Stavební práce",
+        "text": "Práce podle zadání, termínu a skutečného stavu na místě."
+      },
+      {
+        "index": "02",
+        "title": "Koordinace provozu",
+        "text": "Návaznost na další profese, lidi a průběh zakázky."
+      },
+      {
+        "index": "03",
+        "title": "Dokončení a předání",
+        "text": "Důraz na hotový výsledek, kontrolu a použitelnost."
+      }
+    ],
+    "infoTitle": "Jak k tomu přistupujeme",
+    "infoText": "Rozhoduje práce na místě, domluva a to, co po nás zůstane hotové.",
+    "infoItems": [
+      "Reálné zakázky a termíny",
+      "Lidi a koordinace v terénu",
+      "Výsledek, který jde předat"
+    ],
+    "hideContactBox": true,
+    "projectsTitle": "Kde to navazuje",
+    "projectsLead": "Stavební divize zapadá do širšího provozu holdingu.",
+    "projects": [
+      {
+        "tag": "Terén",
+        "title": "Zakázková práce",
+        "text": "Realizace podle konkrétní potřeby a stavu na místě."
+      },
+      {
+        "tag": "Provoz",
+        "title": "Návaznost na cleaning",
+        "text": "Předání prostoru a další krok bez zbytečných prodlev."
+      },
+      {
+        "tag": "Výsledek",
+        "title": "Kontrola a dokončení",
+        "text": "Hotová práce, kterou lze rovnou převzít nebo dál používat."
+      }
+    ],
+    "ctaTitle": "Řešíte stavební zakázku?",
+    "ctaText": "Pošlete zadání. Řekneme, co umíme vzít a jak to uchopit.",
+    "ctaPrimary": "Kontaktovat nás",
+    "ctaSecondary": "Zpět na hlavní web"
+  },
+  "tech": {
+    "badge": "JSPD Tech",
+    "heroTitle": "Vyvíjíme věci, které sami používáme",
+    "heroText": "JSPD Tech řeší weby, interní systémy, automatizace a Android aplikace. Stavíme nástroje pro provoz, ne pro prezentaci.",
+    "heroPoints": [
+      "Interní systémy",
+      "Android aplikace",
+      "Weby a prezentace"
+    ],
+    "cardsTitle": "Co v technické části děláme",
+    "cardsLead": "Věci, které zrychlí práci a dají pořádek do provozu.",
+    "cards": [
+      {
+        "index": "A",
+        "title": "Interní systémy",
+        "text": "Nástroje pro zakázky, lidi, směny, přehledy a běžnou organizaci."
+      },
+      {
+        "index": "B",
+        "title": "Android aplikace",
+        "text": "Aplikace pro terén i firmu. Rychlé použití, jasný výstup."
+      },
+      {
+        "index": "C",
+        "title": "Weby a digitální prezentace",
+        "text": "Weby navázané na reálné podnikání, ne na prázdné texty."
+      }
+    ],
+    "infoTitle": "Pro koho to dává smysl",
+    "infoText": "Pro firmy, kde už tabulky a improvizace brzdí práci.",
+    "infoItems": [
+      "Menší a střední firmy",
+      "Provozy a služby s více lidmi",
+      "Týmy, které chtějí vlastní systém"
+    ],
+    "featurePanel": {
+      "title": "JSPD Hub",
+      "text": "Interní projekt JSPD Holdingu pro řízení zakázek, lidí a provozu.",
+      "href": "/cs/demo",
+      "label": "Otevřít JSPD Hub"
+    },
+    "projectsTitle": "Aktuální projekty",
+    "projectsLead": "Tohle už běží nebo na to přímo navazujeme.",
+    "projects": [
+      {
+        "tag": "Android aplikace",
+        "title": "PD Šternberk",
+        "text": "Interní mobilní aplikace pro konkrétní provoz.",
+        "href": "https://play.google.com/store/apps/details?id=cz.pdsternberk.sternberk&hl=cs"
+      },
+      {
+        "tag": "Android aplikace",
+        "title": "PD Litovel",
+        "text": "Firemní aplikace pro každodenní práci a interní přehled.",
+        "href": "https://play.google.com/store/apps/details?id=cz.pdlitovel.litovel&hl=cs"
+      },
+      {
+        "tag": "SaaS systém",
+        "title": "JSPD Hub",
+        "text": "Naše řídící aplikace.",
+        "href": "/cs/demo",
+        "ctaLabel": "Vyzkoušet trial verzi"
+      },
+      {
+        "tag": "Tvorba webu",
+        "title": "jspd.cz",
+        "text": "Webové stránky JSPD Holdingu.",
+        "href": "https://jspd.cz"
+      },
+      {
+        "tag": "Tvorba webu",
+        "title": "jspdcleaning.cz",
+        "text": "Web úklidové divize a propojení na SaaS systém.",
+        "href": "https://jspdcleaning.cz"
+      }
+    ],
+    "ctaItems": [
+      "Potřebuji vytvořit web",
+      "Zajímá mě aplikace",
+      "Chci vlastní systém"
+    ],
+    "ctaTitle": "Co právě řešíte?",
+    "ctaText": "Pomůžeme vám navrhnout řešení podle skutečného provozu, ne podle teorie.",
+    "ctaPrimary": "Nezávazně popsat záměr",
+    "ctaSecondary": ""
+  },
+  "bakery": {
+    "badge": "Gastro",
+    "heroTitle": "Gastro jako jeden provoz",
+    "heroText": "Gastro spojuje výrobu, prodej i zakázky do jednoho celku. Řešíme běžný chod, zákazníky, odběry i objednávky.",
+    "heroPoints": [
+      "Výroba",
+      "Prodej",
+      "Zakázky",
+      "Odběry"
+    ],
+    "cardsTitle": "Co gastro pokrývá",
+    "cardsLead": "Jeden provoz od výroby až po přímý prodej.",
+    "cards": [
+      {
+        "index": "01",
+        "title": "Výroba a sortiment",
+        "text": "Pečivo, cukrářská výroba a další nabídka podle skutečného provozu."
+      },
+      {
+        "index": "02",
+        "title": "Zakázková výroba",
+        "text": "Zakázky podle zadání, termínu a reálné kapacity."
+      },
+      {
+        "index": "03",
+        "title": "Firemní odběry",
+        "text": "Dodávky pro provozy, firmy a další odběratele."
+      },
+      {
+        "index": "04",
+        "title": "Přímý prodej",
+        "text": "Každodenní prodej, výdej a práce se zákazníkem na místě."
+      },
+      {
+        "index": "05",
+        "title": "Kavárenský provoz",
+        "text": "Obsluha, zázemí a běžný chod části, kde se lidé zastaví osobně."
+      },
+      {
+        "index": "06",
+        "title": "Objednávky na míru",
+        "text": "Dorty, oslavy, firemní akce a další konkrétní zadání."
+      }
+    ],
+    "infoTitle": "Jak tenhle provoz funguje",
+    "infoText": "Spojujeme výrobu, výdej i kontakt se zákazníkem. Rozhoduje tempo, domluva a to, co opravdu odchází ven.",
+    "infoItems": [
+      "Denní provoz a skutečná výroba",
+      "Přímý prodej i zakázky na míru",
+      "Výstup, který jde rovnou ke zákazníkovi"
+    ],
+    "hideContactBox": true,
+    "projectsTitle": "Co na tom stojí",
+    "projectsLead": "Gastro není rozdělené na dvě vitríny. Je to jeden provoz s více částmi.",
+    "projects": [
+      {
+        "tag": "Výroba",
+        "title": "Denní nabídka",
+        "text": "Běžná výroba a sortiment podle toho, co se skutečně připravuje."
+      },
+      {
+        "tag": "Prodej",
+        "title": "Front a obsluha",
+        "text": "Přímý kontakt se zákazníkem, výdej a běžný denní rytmus provozu."
+      },
+      {
+        "tag": "Zakázky",
+        "title": "Objednávky a odběry",
+        "text": "Zakázková výroba, firemní odběry a další konkrétní poptávky."
+      }
+    ],
+    "ctaTitle": "Řešíte gastro zakázku nebo odběr?",
+    "ctaText": "Pošlete zadání. Řekneme rovnou, co umíme dodat a v jakém režimu.",
+    "ctaPrimary": "Kontaktovat nás",
+    "ctaSecondary": "Zpět na hlavní web"
+  },
+  "cafe": {
+    "badge": "Gastro",
+    "heroTitle": "Gastro jako prodej a práce se zákazníkem",
+    "heroText": "Tahle část ukazuje front, výdej, nabídku a každodenní kontakt se zákazníkem. Ne kulisu. Normální provoz.",
+    "heroPoints": [
+      "Prodej",
+      "Zákazníci",
+      "Objednávky"
+    ],
+    "cardsTitle": "Co tahle část řeší",
+    "cardsLead": "Provoz stojí na nabídce, tempu a tom, co se opravdu prodá.",
+    "cards": [
+      {
+        "index": "01",
+        "title": "Cukrářská nabídka",
+        "text": "Dorty, zákusky a další sortiment podle skutečné nabídky."
+      },
+      {
+        "index": "02",
+        "title": "Kavárna a obsluha",
+        "text": "Prostor, obsluha a běžný provoz během dne."
+      },
+      {
+        "index": "03",
+        "title": "Zakázky a speciální příležitosti",
+        "text": "Objednávky na míru, oslavy, firemní akce a další konkrétní zadání."
+      }
+    ],
+    "infoTitle": "Jak tahle část funguje",
+    "infoText": "Prodáváme konkrétní produkt konkrétním lidem. Na tom stojí celý provoz.",
+    "infoItems": [
+      "Reálný prodej a každodenní tempo",
+      "Produkt, který jde rovnou k zákazníkovi",
+      "Objednávky a kontakt bez zbytečné omáčky"
+    ],
+    "ctaTitle": "Chcete řešit nabídku nebo objednávku?",
+    "ctaText": "Ozvěte se s konkrétním zadáním. Navážeme rovnou.",
+    "ctaPrimary": "Kontaktovat nás",
+    "ctaSecondary": "Zpět na hlavní web"
+  },
+  "demo": {
+    "badge": "Demo Hubu",
+    "heroTitle": "Systém pro reálný provoz",
+    "heroText": "Tohle není teorie. Je to základ systému, který řeší zakázky, lidi, směny a výstupy. Vzniká z provozu, který běží každý den.",
+    "heroPoints": [
+      "Zakázky",
+      "Lidi a směny",
+      "Výstupy"
+    ],
+    "cardsTitle": "Co systém řeší",
+    "cardsLead": "Neukazujeme všechno. Ukazujeme to podstatné.",
+    "cards": [
+      {
+        "index": "01",
+        "title": "Přehled zakázek",
+        "text": "Plánování, stav a rychlý přehled nad tím, co běží."
+      },
+      {
+        "index": "02",
+        "title": "Pracovníci a směny",
+        "text": "Řízení lidí, práce a provozu v jednom místě."
+      },
+      {
+        "index": "03",
+        "title": "Reporty a výstupy",
+        "text": "Evidence práce, fotky, výstupy a kontrola hotové zakázky."
+      }
+    ],
+    "infoTitle": "Kam to míří",
+    "infoText": "Tenhle systém nevzniká pro ukázku. Vzniká pro použití a další prodej.",
+    "infoItems": [
+      "Řeší konkrétní provozní problém",
+      "Běží na datech z reálné práce",
+      "Je to základ pro SaaS směr"
+    ],
+    "projectsTitle": "Další směr demo sekce",
+    "projectsLead": "Z interního nástroje vzniká produkt, který jde ukázat i prodávat.",
+    "projects": [
+      {
+        "tag": "Demo",
+        "title": "Přehled provozu",
+        "text": "Hlavní obrazovky a logika systému bez zbytečné vaty."
+      },
+      {
+        "tag": "Use-case",
+        "title": "Praktické scénáře",
+        "text": "Konkrétní situace, které systém řeší v provozu."
+      },
+      {
+        "tag": "SaaS",
+        "title": "Další krok",
+        "text": "Základ pro budoucí produkt a samostatný prodej."
+      }
+    ],
+    "ctaTitle": "Chcete vidět, jak systém funguje?",
+    "ctaText": "Ozvěte se. Ukážeme konkrétní směr a konkrétní použití.",
+    "ctaPrimary": "Kontaktovat nás",
+    "ctaSecondary": "Zpět na hlavní web"
+  },
+  "contact": {
+    "badge": "Kontakt",
+    "heroTitle": "Kontakt pro holding, služby i technologické projekty",
+    "heroText": "Tady řešíme holding, úklid, systém i gastro. Napište konkrétní věc a navážeme.",
+    "boxTitle": "Základní kontakt",
+    "boxText": "Jeden kontakt pro holding, cleaning, tech i gastro provoz.",
+    "emailButton": "Napsat e-mail",
+    "rightTitle": "Co řešíme",
+    "rightText": "Holding, zakázky, systém, provoz a další navazující práci.",
+    "rightItems": [
+      "Holding a obchod",
+      "JSPD Cleaning",
+      "JSPD Tech",
+      "Gastro provoz"
+    ]
+  }
+}

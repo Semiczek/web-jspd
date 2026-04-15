@@ -1,0 +1,216 @@
+﻿{
+  "common": {
+    "brand": "JSPD Holding",
+    "contactEmail": "info@jspd.cz",
+    "footerLeft": "JSPD Holding",
+    "footerRight": "Public multilingual website for the holding, services, operations and the future demo system.",
+    "footerNote": "Clean foundation for a trustworthy group presentation and future growth."
+  },
+  "header": {
+    "groupLabel": "Holding | services | technology | gastro",
+    "contactCta": "Contact",
+    "languageLabel": "Switch language"
+  },
+  "nav": {
+    "home": "Holding",
+    "cleaning": "Cleaning",
+    "construction": "Construction",
+    "tech": "Tech",
+    "bakery": "Bakery",
+    "cafe": "Pastry shop & cafe",
+    "demo": "Demo",
+    "contact": "Contact"
+  },
+  "home": {
+    "badge": "JSPD Holding",
+    "heroTitle": "Operations, services and technology under one roof",
+    "heroText": "JSPD Holding connects several independent but complementary directions. Alongside professional cleaning services, we also develop technology solutions, our own operational projects and a gastro segment. The goal is not to look like an anonymous group of companies, but like a functional whole built on real work, real operations and long-term growth.",
+    "primaryCta": "View JSPD Cleaning",
+    "secondaryCta": "View JSPD Tech",
+    "sideTitle": "What makes up JSPD today",
+    "sideText": "Today the holding stands on several concrete pillars. Each has its own direction, but together they create a stable base for further growth.",
+    "sideItems": [
+      "JSPD Cleaning - professional cleaning services for companies and operations",
+      "JSPD Tech - development of websites, internal systems and Android apps",
+      "Bakery in Litovel and pastry shop with cafe in Sternberk"
+    ],
+    "sideNote": "This website is designed as a long-term base for presenting the holding, its individual branches and a future expansion with a system demo and commercial layer.",
+    "pillarsTitle": "Main pillars of the holding",
+    "pillarsLead": "JSPD is not built on one activity only. Each branch has its own logic, but together they create a stronger and more stable whole.",
+    "pillars": [
+      {"index": "01", "title": "JSPD Cleaning", "text": "An independent cleaning branch focused on professional service for companies, operations, gastro, construction sites and other properties. The emphasis is on reliability, straightforward communication and visible results."},
+      {"index": "02", "title": "JSPD Tech", "text": "The technology part of the holding focused on websites, internal systems, automation and Android apps. We build solutions with real use in day-to-day operations."},
+      {"index": "03", "title": "Gastro operations", "text": "The holding also includes a bakery in Litovel and a pastry shop with cafe in Sternberk. These operations add another independent segment built on everyday customer work."}
+    ],
+    "whyTitle": "Why this model matters",
+    "whyText": "It is not only about presenting separate services. The goal is to show that the brand stands on real operational experience, the ability to build its own projects and develop them over time.",
+    "whyItems": [
+      "Clear separation of the individual branches",
+      "A more credible presentation thanks to real projects and operations",
+      "A prepared base for future growth, system demo and commercial expansion"
+    ],
+    "projectsTitle": "Current projects and directions",
+    "projectsLead": "Alongside operating businesses, we are also developing our own digital and technology outputs.",
+    "projects": [
+      {"tag": "Android app", "title": "PD Sternberk", "text": "An internal Android app designed for specific operational needs and everyday company use."},
+      {"tag": "Android app", "title": "PD Litovel", "text": "A second company app adapted to real operations, simple usage and internal organization."},
+      {"tag": "Web / system", "title": "JSPD Cleaning and future demo hub", "text": "A standalone web presentation of the cleaning branch and a prepared space for a future system showcase and its commercial use."}
+    ],
+    "ctaTitle": "Ready for further growth",
+    "ctaText": "The website is built to present the holding while also creating space for a future system demo, commercial communication and the growth of each branch.",
+    "ctaPrimary": "View demo",
+    "ctaSecondary": "Contact us"
+  },
+  "cleaning": {
+    "badge": "JSPD Cleaning",
+    "heroTitle": "Cleaning services built on practice, not slogans",
+    "heroText": "JSPD Cleaning is an independent cleaning branch of the holding focused on professional service for companies, operations, gastro, construction sites and other properties. We do not rely on big promises, but on reliable work, reasonable communication and visible results.",
+    "heroPoints": ["Recurring cleaning", "Gastro and operations", "Construction and one-off work"],
+    "cardsTitle": "Where we bring the most value",
+    "cardsLead": "We focus on areas where reliability, responsiveness and the ability to handle real operations matter.",
+    "cards": [
+      {"index": "01", "title": "Recurring cleaning", "text": "Long-term service for companies, operations and properties where stability, control and practical cooperation matter."},
+      {"index": "02", "title": "Gastro and operational facilities", "text": "Cleaning of spaces that require speed, consistency and the ability to adapt to a specific operation."},
+      {"index": "03", "title": "Construction and one-off interventions", "text": "Major cleaning, finishing work after construction and larger interventions where the main goal is a clean and usable result."}
+    ],
+    "infoTitle": "How we approach cleaning",
+    "infoText": "We prefer clear agreements, a straightforward approach and work that makes sense from the customer and operational point of view. We do not chase impression, but a functional result.",
+    "infoItems": ["Emphasis on reliability and real results","Flexibility based on property type and operation","Ready for future references, galleries and inquiries"],
+    "ctaTitle": "Looking for reliable cleaning for your company or operation?",
+    "ctaText": "We will be glad to look at your situation and suggest a sensible solution based on the property type, scope and expectations.",
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "Back to main site"
+  },
+  "construction": {
+    "badge": "Construction division",
+    "heroTitle": "Construction as a standalone division",
+    "heroText": "The construction division handles field work, execution and handover. It is built on real jobs, real people and real output on site.",
+    "heroPoints": ["Execution", "Coordination", "Completion"],
+    "cardsTitle": "What this division handles",
+    "cardsLead": "Not presentation. Real work on real jobs.",
+    "cards": [
+      {"index": "01", "title": "Construction work", "text": "Work based on the assignment, the deadline and the real situation on site."},
+      {"index": "02", "title": "Operational coordination", "text": "Coordination between people, work phases and the full job flow."},
+      {"index": "03", "title": "Completion and handover", "text": "Focus on finished output, control and handover that can be used immediately."}
+    ],
+    "infoTitle": "How we approach it",
+    "infoText": "What matters is the work on site, clear coordination and a finished result.",
+    "infoItems": ["Real jobs and deadlines", "People and coordination in the field", "A result that can be handed over"],
+    "projectsTitle": "How it connects",
+    "projectsLead": "The construction division fits into the wider holding operation.",
+    "projects": [
+      {"tag": "Field work", "title": "Job execution", "text": "Execution based on the actual job and on-site condition."},
+      {"tag": "Operation", "title": "Connection to cleaning", "text": "Smooth handover of the site and direct follow-up work."},
+      {"tag": "Result", "title": "Control and finish", "text": "Finished work that can be handed over or used right away."}
+    ],
+    "ctaTitle": "Do you need a construction team?",
+    "ctaText": "Send the assignment. We will tell you what we can take on and how we would handle it.",
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "Back to main site"
+  },
+  "tech": {
+    "badge": "JSPD Tech",
+    "heroTitle": "Development connected to real operations",
+    "heroText": "JSPD Tech is the technology branch of the holding focused on websites, internal systems, automation and Android apps. It is not a generic agency offer. We design things to be usable in practice and directly connected to the real operation of a business.",
+    "heroPoints": ["Internal systems", "Android applications", "Websites and digital presentation"],
+    "cardsTitle": "What we build in the technology branch",
+    "cardsLead": "We see technology as a tool for simpler work, better visibility and higher efficiency.",
+    "cards": [
+      {"index": "A", "title": "Internal systems", "text": "Development of internal tools for operations, jobs, people, reports and everyday organization."},
+      {"index": "B", "title": "Android applications", "text": "Mobile apps designed for practical use in the field and inside the company, with emphasis on simplicity and functionality."},
+      {"index": "C", "title": "Websites and digital presentations", "text": "Creation of company websites, standalone presentation pages and digital outputs linked to real business activity."}
+    ],
+    "infoTitle": "Who this is for",
+    "infoText": "The technology branch makes the most sense where a company is outgrowing simple spreadsheets, manual organization and improvisation.",
+    "infoItems": ["Small and medium businesses","Operations and services with more people","Companies that want their own system instead of chaos"],
+    "projectsTitle": "Examples of current projects",
+    "projectsLead": "The technology part stands on concrete outputs, not empty claims.",
+    "projects": [
+      {"tag": "Android app", "title": "PD Sternberk", "text": "An internal mobile app created for the needs of a specific operation."},
+      {"tag": "Android app", "title": "PD Litovel", "text": "A standalone company app adapted to everyday work and internal organization."},
+      {"tag": "Web / demo", "title": "JSPD Cleaning and Hub", "text": "A web presentation of the cleaning branch and a prepared base for a future showcase of an in-house system."}
+    ],
+    "ctaTitle": "Do you need a website, internal system or your own app?",
+    "ctaText": "The technology branch of the holding is ready to grow further toward internal tools, customer portals and a future SaaS model.",
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "Back to main site"
+  },
+  "bakery": {
+    "badge": "Litovel Bakery",
+    "heroTitle": "A bakery as an honest part of the holding",
+    "heroText": "The bakery in Litovel represents another independent branch of the holding. It is built on daily production, direct customer contact and a fair operation that has its own place in the region.",
+    "heroPoints": ["Bakery products", "Custom production", "Business supply"],
+    "cardsTitle": "What this section can present",
+    "cardsLead": "The goal is not only to show products, but also the credibility of the operation and its real background.",
+    "cards": [
+      {"index": "01", "title": "Bakery products and assortment", "text": "Space for the standard offer as well as a wider assortment based on actual production and seasonality."},
+      {"index": "02", "title": "Custom production", "text": "A way to present individual orders and solutions based on the customer's specific needs."},
+      {"index": "03", "title": "Business supply", "text": "A prepared base for communication toward operations, companies and other buyers."}
+    ],
+    "infoTitle": "How to communicate this branch",
+    "infoText": "The bakery should not feel like a side note, but like a full and trustworthy part of the holding with its own meaning.",
+    "infoItems": ["Local identity and credibility","Space for offer, operational details and orders","Future gallery and order forms"],
+    "ctaTitle": "Do you want to learn more about this part?",
+    "ctaText": "This section is ready for further expansion with assortment details, photography, contact information and a clearer offer.",
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "Back to main site"
+  },
+  "cafe": {
+    "badge": "Pastry shop & cafe Sternberk",
+    "heroTitle": "A place where pastry, cafe and local atmosphere come together",
+    "heroText": "The pastry shop with cafe in Sternberk expands the holding with another independent operation. This section is ready to present the offer, the space and custom production built on trust and the real customer experience.",
+    "heroPoints": ["Pastry offer", "Cafe and atmosphere", "Orders and special occasions"],
+    "cardsTitle": "What this section can present",
+    "cardsLead": "It is not only about products, but also about the environment, the brand and the reason customers come back.",
+    "cards": [
+      {"index": "01", "title": "Pastry offer", "text": "Cakes, desserts, sweet production and other items based on the actual offer of the operation."},
+      {"index": "02", "title": "Cafe and environment", "text": "The atmosphere of the place, seating and the overall feeling that gives people a reason to visit in person."},
+      {"index": "03", "title": "Orders and special occasions", "text": "Space for custom cakes, celebrations, company events or other individual solutions."}
+    ],
+    "infoTitle": "How this part should feel",
+    "infoText": "The goal is a trustworthy and pleasant presentation that does not feel overloaded, but clearly shows the character of the operation.",
+    "infoItems": ["Stronger local brand","Space for real photos and the offer","Preparation for future orders and contact"],
+    "ctaTitle": "Do you want to know more about the operation?",
+    "ctaText": "This section is ready for adding the offer, photography, contacts and more specific information.",
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "Back to main site"
+  },
+  "demo": {
+    "badge": "Demo Hub",
+    "heroTitle": "A space for the future system showcase",
+    "heroText": "This section is prepared as a base for the future presentation of the internal system and its practical use. It should not show everything, but give a clear idea of what the system solves and why it can be valuable for company operations.",
+    "heroPoints": ["Job overview", "Workers and shifts", "Reports and outputs"],
+    "cardsTitle": "What the demo can gradually show",
+    "cardsLead": "The goal is not to overwhelm visitors, but to explain the value of the system in a clear way.",
+    "cards": [
+      {"index": "01", "title": "Job overview", "text": "A showcase of planning, organization and the overall overview of operations and jobs."},
+      {"index": "02", "title": "Workers and shifts", "text": "An example of how a team, work and everyday operation can be managed clearly."},
+      {"index": "03", "title": "Reports and outputs", "text": "A view of work records, photos, job outputs and other important information."}
+    ],
+    "infoTitle": "How to approach the demo section",
+    "infoText": "The demo should feel commercial and understandable. The point is not to show the whole system, but to explain the value it brings.",
+    "infoItems": ["Controlled and professional scope","Ready for a future SaaS direction","Can later include video, screenshots and a contact form"],
+    "projectsTitle": "Next direction for the demo section",
+    "projectsLead": "This part can gradually grow into a full entry point for commercial presentation and a future product demo.",
+    "projects": [
+      {"tag": "Demo", "title": "Operational overview", "text": "A showcase of main screens and overviews without exposing the whole internal system."},
+      {"tag": "Use-case", "title": "Practical scenarios", "text": "Short scenarios that explain what the system solves and who it helps."},
+      {"tag": "Business", "title": "Future presentation", "text": "A prepared base for video, screenshots and follow-up business communication."}
+    ],
+    "ctaTitle": "Interested in a system showcase?",
+    "ctaText": "This section can gradually grow into a full entry point for commercial presentation and a future product demo.",
+    "ctaPrimary": "Contact us",
+    "ctaSecondary": "Back to main site"
+  },
+  "contact": {
+    "badge": "Contact",
+    "heroTitle": "Contact for the holding, services and technology projects",
+    "heroText": "This page serves as a shared contact point for the individual branches of the holding. Over time it can be expanded with separate contacts for each segment and operation.",
+    "boxTitle": "Basic contact",
+    "boxText": "This area can gradually split contact details for the holding, cleaning, tech and gastro operations.",
+    "emailButton": "Send e-mail",
+    "rightTitle": "What can be added here",
+    "rightText": "In the future the page can be expanded with a contact form, specific people, a map or separate contact details for each part of the holding.",
+    "rightItems": ["Holding and business", "JSPD Cleaning", "JSPD Tech", "Bakery and pastry shop"]
+  }
+}

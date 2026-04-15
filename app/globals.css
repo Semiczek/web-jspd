@@ -359,7 +359,7 @@ strong,h1,h2,h3,h4{font-family:"Sora","Plus Jakarta Sans","Segoe UI",sans-serif}
 .section-head{
   display:flex;
   justify-content:space-between;
-  align-items:end;
+  align-items:flex-end;
   gap:16px;
   flex-wrap:wrap;
   margin-bottom:22px;

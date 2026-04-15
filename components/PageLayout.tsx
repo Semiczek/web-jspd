@@ -1,3 +1,6 @@
+﻿'use client';
+
+import {useEffect} from 'react';
 import {AppLocale} from '@/lib/routing';
 import {Dictionary} from './types';
 import SiteHeader from './SiteHeader';
@@ -10,6 +13,10 @@ type Props = {
 };
 
 export default function PageLayout({locale, dict, children}: Props) {
+  useEffect(() => {
+    document.documentElement.lang = locale;
+  }, [locale]);
+
   return (
     <div className="site-shell">
       <SiteHeader locale={locale} dict={dict} />

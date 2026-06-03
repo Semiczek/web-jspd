@@ -1,15 +1,19 @@
-import { readFile } from 'node:fs/promises'
-import path from 'node:path'
+export const dynamic = 'force-dynamic'
 
-export const dynamic = 'force-static'
+export async function GET(request: Request) {
+  const htmlUrl = new URL('/routex2/index.html', request.url)
+  const htmlResponse = await fetch(htmlUrl, { cache: 'force-cache' })
 
-export async function GET() {
-  const filePath = path.join(process.cwd(), 'public', 'routex2', 'index.html')
-  const html = await readFile(filePath, 'utf8')
+  if (!htmlResponse.ok) {
+    return new Response('Routex page not found', { status: 404 })
+  }
+
+  const html = await htmlResponse.text()
 
   return new Response(html, {
     headers: {
       'content-type': 'text/html; charset=utf-8',
+      'cache-control': 'public, max-age=0, s-maxage=86400',
     },
   })
 }

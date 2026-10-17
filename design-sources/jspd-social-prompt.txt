@@ -1,0 +1,9 @@
+Use case: compositing.
+Asset type: polished wide landscape social-sharing preview card, approx. 1.91:1 aspect ratio, high-resolution image.
+Input image: supplied bronze architectural portal image is the visual source and edit target. Preserve its cinematic photoreal bronze material, graphite concrete, subtle reflections, countryside sunset and premium restrained mood. Reframe it beautifully as a wide social card with monumental asymmetric bronze loop and landscape opening concentrated on the RIGHT. Keep LEFT dark and sufficiently clear for the following typography. Do not add any other imagery.
+Typography: beautifully typeset, accurately legible Czech text in warm ivory. On the upper-left area, medium-sized refined restrained serif type with the exact title 'JSPD Holding'. Below it in a larger sophisticated editorial serif headline, two lines if necessary, exact sentence 'Z nápadů skutečný svět.'. Below that smaller supporting line in clean elegant type, exact sentence 'Technologie. Řemeslo. Služby.'. Use generous left margin and balanced spacing, with the text wholly inside a safe inset. Readable at social thumbnail size. Preserve every Czech diacritic exactly.
+Text (verbatim, only these three strings):
+JSPD Holding
+Z nápadů skutečný svět.
+Technologie. Řemeslo. Služby.
+Constraints: Preserve the concept-art visual direction; this is conceptual architecture, not a real headquarters. Only the three provided strings, no additional claims or text, no website address, no invented logo, no icons, no watermark, no border, no UI, no button, no collage, no particles.

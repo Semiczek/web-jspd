@@ -1,0 +1,312 @@
+{
+  "date": "2026-10-07",
+  "domainTarget": "jspd.cz",
+  "published": false,
+  "entries": [
+    {
+      "file": "assets/hero-desktop.webp",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 144362,
+      "sha256": "36827fd748d468a5a8f2207b72d5f043d147cafe390a994b441a41a01092fffc",
+      "purpose": "Architektonický portál — výtvarná metafora, nikoli sídlo firmy",
+      "source": "Vestavěný imagegen, 7. 10. 2026; schválená možnost konceptových podkladů v zadání",
+      "license": "Generováno pro tento koncept. Není externí koupený asset.",
+      "status": "Archivní podklad V1/V2, nepoužívá se v aktuálním úvodu ani v rozhraních V3",
+      "mobile": "assets/hero-mobile.webp",
+      "fallback": "Stejný statický obraz, při úplném selhání médií zůstává sémantické HTML",
+      "animation": "Žádná; původní kruhový portál byl nahrazen originálním logem JSPD."
+    },
+    {
+      "file": "assets/hero-mobile.webp",
+      "dimensions": [
+        768,
+        512
+      ],
+      "bytes": 34500,
+      "sha256": "a0cc683495529775935385433796e088a42872a23d54a06004372b0d632cc490",
+      "purpose": "Mobilní přenosová varianta",
+      "source": "Stejný generovaný originál",
+      "license": "Stejné jako desktop",
+      "status": "Archivní podklad V1/V2, nepoužívá se v aktuálním úvodu ani v rozhraních V3",
+      "mobile": true,
+      "fallback": "HTML obsah",
+      "animation": "Žádná; původní kruhový portál byl nahrazen originálním logem JSPD."
+    },
+    {
+      "file": "assets/bakery-desktop.webp",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 191672,
+      "sha256": "999fba76726996a9cd3138c53d923b1bd9efc7af5a8f9c039c5b951f9e089a6e",
+      "purpose": "Ilustrace pečiva — ne fotografie konkrétního výrobku",
+      "source": "Vestavěný imagegen, 7. 10. 2026; schválená možnost konceptových podkladů v zadání",
+      "license": "Generováno pro tento koncept. Není externí koupený asset.",
+      "status": "Konceptový statický obraz",
+      "mobile": "assets/bakery-mobile.webp",
+      "fallback": "Stejný statický obraz, při úplném selhání médií zůstává sémantické HTML",
+      "animation": "Makrokompozice s návazným odkrytím a změnou měřítka řízenou scrollem; nejde o film výroby."
+    },
+    {
+      "file": "assets/bakery-mobile.webp",
+      "dimensions": [
+        720,
+        480
+      ],
+      "bytes": 45704,
+      "sha256": "fedd983a66ce0c8f48a52523d92de1fc9592d66da6801815bf4c0ef14d1e5b5e",
+      "purpose": "Mobilní přenosová varianta",
+      "source": "Stejný generovaný originál",
+      "license": "Stejné jako desktop",
+      "status": "Hotovo",
+      "mobile": true,
+      "fallback": "HTML obsah",
+      "animation": "Makrokompozice s návazným odkrytím a změnou měřítka řízenou scrollem; nejde o film výroby."
+    },
+    {
+      "file": "assets/cleaning-desktop.webp",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "bytes": 207410,
+      "sha256": "e1102026f264c1932341f6e4c5020340cfadf86eba2355f78d19a8aa17587b09",
+      "purpose": "Architektonická ilustrace — ne realizace klienta",
+      "source": "Vestavěný imagegen, 7. 10. 2026; schválená možnost konceptových podkladů v zadání",
+      "license": "Generováno pro tento koncept. Není externí koupený asset.",
+      "status": "Konceptový statický obraz",
+      "mobile": "assets/cleaning-mobile.webp",
+      "fallback": "Stejný statický obraz, při úplném selhání médií zůstává sémantické HTML",
+      "animation": "Stejný obraz s opticky zamlženou vrstvou, kterou odhalí přesná diagonální hranice. Přiznaná ilustrace, nikoli skutečné před/po."
+    },
+    {
+      "file": "assets/cleaning-mobile.webp",
+      "dimensions": [
+        720,
+        480
+      ],
+      "bytes": 50858,
+      "sha256": "259d48f99a2d22a0d075d114507a5580754aa99e47962b6a15c813cb7e8f6b80",
+      "purpose": "Mobilní přenosová varianta",
+      "source": "Stejný generovaný originál",
+      "license": "Stejné jako desktop",
+      "status": "Hotovo",
+      "mobile": true,
+      "fallback": "HTML obsah",
+      "animation": "Stejný obraz s opticky zamlženou vrstvou, kterou odhalí přesná diagonální hranice. Přiznaná ilustrace, nikoli skutečné před/po."
+    },
+    {
+      "file": "assets/holding-logo.png",
+      "dimensions": [
+        1024,
+        450
+      ],
+      "bytes": 190090,
+      "sha256": "618a0a06e4e17837b9f68d1c38a9984856b3b218a00670a05df93e5d15e34132",
+      "purpose": "Logo v hlavičce a patičce",
+      "source": "https://www.jspd.cz/logo-jspd.png",
+      "sourcePage": "https://www.jspd.cz/",
+      "license": "Existující identita zadavatele, převzato na jeho výslovný pokyn; není obecnou licencí pro třetí osoby.",
+      "status": "Původní PNG beze změny",
+      "mobile": "Stejný originál, menší CSS rozměr",
+      "fallback": "Původní modrý znak, oříznutý pouze pomocí CSS; bez JavaScriptu, bez WebGL a při omezení pohybu.",
+      "animation": "Pět původních alfa komponent má vlastní těžiště, výrazný počáteční rozptyl, natočení a hloubku. Scrollem se vrátí do původního umístění. Měkký glow zachovává ostrý původní znak."
+    },
+    {
+      "file": "assets/cleaning-logo.png",
+      "dimensions": [
+        904,
+        881
+      ],
+      "bytes": 390663,
+      "sha256": "0621084b7420a898941b0a7f8dfdda3be309bd17565b1c5d2f48fc0f996b6989",
+      "purpose": "Původní symbol JSPD Cleaning",
+      "source": "https://www.jspdcleaning.cz/jspdcleaning-logo.png",
+      "sourcePage": "https://www.jspdcleaning.cz/cs",
+      "license": "Existující identita zadavatele, výslovně požadované převzetí",
+      "status": "Původní PNG beze změny, doplněný názvem stejně jako na zdrojovém webu",
+      "mobile": "Stejný soubor",
+      "fallback": "HTML název JSPD Cleaning",
+      "animation": "Stejný obraz s opticky zamlženou vrstvou, kterou odhalí přesná diagonální hranice. Přiznaná ilustrace, nikoli skutečné před/po."
+    },
+    {
+      "file": "assets/diriqo-logo-icon.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "bytes": 4193,
+      "sha256": "e95960046b36b983f112dedea6bc1ad5d75f6b7c2ef034f2a94e115f078f27cc",
+      "purpose": "Původní ikona Diriqo vedle názvu",
+      "source": "https://www.diriqo.com/_next/image?url=%2Fdiriqo-logo-icon.png&w=128&q=75&dpl=dpl_HV6EUr5GfnZ6yjTLPrCCFtx6m2jq",
+      "sourcePage": "https://www.diriqo.com/cs",
+      "originalURL": "https://www.diriqo.com/diriqo-logo-icon.png",
+      "license": "Existující identita zadavatele, výslovně požadované převzetí",
+      "status": "Ověřeno v živé hlavičce",
+      "mobile": "Stejný soubor",
+      "fallback": "HTML název diriqo"
+    },
+    {
+      "purpose": "Stávající značka Pekárny Litovel",
+      "sourcePage": "https://pekarnalitovel.cz/",
+      "source": "Živá hlavička: .brand-bakery-symbol + Řemeslná pekárna Litovel; zdrojové CSS použito pro symbol",
+      "license": "Existující identita zadavatele",
+      "status": "Na zdrojovém webu jde o CSS symbol a název, nikoli samostatný obrázek loga.",
+      "dimensions": "Symbol 52 × 52 CSS px",
+      "mobile": "44 × 48 CSS px",
+      "fallback": "HTML název pekárny"
+    },
+    {
+      "file": "assets/social.png",
+      "dimensions": [
+        1200,
+        628
+      ],
+      "bytes": 1591437,
+      "sha256": "6396af9310a0e0490f97d35e62d3dc73b7a8674c87ba80bed0339bb383882799",
+      "purpose": "Náhled při sdílení",
+      "source": "Vestavěný imagegen podle portálu, 7. 10. 2026",
+      "license": "Generováno pro tento koncept",
+      "status": "Hotovo; metadata v lokálním buildu mají localhost origin",
+      "mobile": "Není samostatná varianta",
+      "fallback": null
+    },
+    {
+      "purpose": "Lokální typografie s českou diakritikou",
+      "files": "assets/fonts/*.woff2",
+      "families": [
+        "Cormorant Garamond regular + italic",
+        "DM Sans 400, 500, 600"
+      ],
+      "source": "https://fonts.google.com/",
+      "license": "SIL OFL 1.1; plné texty licencí přiloženy v assets/fonts/",
+      "status": "Hotovo, latin a latin-ext, bez požadavku na Google při otevření stránky",
+      "dimensions": null,
+      "mobile": "Stejné lokální fonty",
+      "fallback": "Georgia a Arial"
+    },
+    {
+      "file": "assets/gallery-desktop.webp",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "bytes": 138788,
+      "sha256": "b7eb6ee3b4ba401008791f1b81c396c9dbe9e791b441ae4d5d0f203be1a194a2",
+      "purpose": "Prostorové pozadí nové interaktivní scény; galerijní architektura je výtvarná metafora",
+      "source": "Vestavěný imagegen, jediná generace 7. 10. 2026. Originál a prompt v design-sources/gallery-background.*",
+      "license": "Generováno pro tento koncept",
+      "status": "Archivní podklad V1/V2, nepoužívá se v aktuálním úvodu ani v rozhraních V3",
+      "mobile": "assets/gallery-mobile.webp",
+      "fallback": "assets/hero-mobile.webp",
+      "animation": "Žádná; původní kruhový portál byl nahrazen originálním logem JSPD."
+    },
+    {
+      "file": "assets/gallery-mobile.webp",
+      "dimensions": [
+        720,
+        960
+      ],
+      "bytes": 70648,
+      "sha256": "21943c4075fff30c2b965612bf9daafd923632aba73e92745a2d834065d5df74",
+      "purpose": "Prostorové pozadí nové interaktivní scény; galerijní architektura je výtvarná metafora",
+      "source": "Vestavěný imagegen, jediná generace 7. 10. 2026. Originál a prompt v design-sources/gallery-background.*",
+      "license": "Generováno pro tento koncept",
+      "status": "Archivní podklad V1/V2, nepoužívá se v aktuálním úvodu ani v rozhraních V3",
+      "mobile": "assets/gallery-mobile.webp",
+      "fallback": "assets/hero-mobile.webp",
+      "animation": "Žádná; původní kruhový portál byl nahrazen originálním logem JSPD."
+    },
+    {
+      "files": "assets/vendor/three/*",
+      "source": "npm: three@0.180.0; https://threejs.org/",
+      "license": "MIT, přiloženo assets/vendor/three/LICENSE.txt",
+      "purpose": "Lokálně servírovaný vykreslovač skutečné 3D geometrie, bez CDN",
+      "status": "Zamčená závislost v package-lock.json",
+      "mobile": "Stejný vykreslovač, upravená kamera, DPR maximálně 1.5",
+      "fallback": "Statický portál, přímé odkazy a běžná výška sekce"
+    },
+    {
+      "file": "assets/diriqent-character-v1.webp",
+      "dimensions": [
+        512,
+        768
+      ],
+      "bytes": 121080,
+      "sha256": "3862f4aa91b08c48fcf0e48d67b8b131ce7c30a85a823b21f576217807224f43",
+      "purpose": "Fialová postava Diriqenta v prostřední kartě rodiny Diri",
+      "source": "Existující podklad zadavatele: diriqent/deliverables/ai-video-references-v002-diriqo-logo/01_Diriqent_celopostavovy.png",
+      "method": "Built-in imagegen: průhledný výřez ze stávající postavy; prompt a PNG v design-sources/diriqent-character-cutout-v1.*. Zmenšeno na WebP s alfa kanálem.",
+      "license": "Existující postava zadavatele, požadované použití na jeho webu",
+      "status": "Vloženo do lokálního náhledu",
+      "mobile": "Stejná postava, upravená velikost a odstupy",
+      "fallback": "Sémantický název Diriqent a kontaktní odkaz"
+    }
+  ],
+  "missing": [
+    {
+      "id": "bakery-film",
+      "status": "Čeká na skutečný konzistentní filmový podklad",
+      "brief": "8–12 s, makro, jeden výrobek a kompozice, medové boční světlo. 0–12 % zrno, 12–25 % mouka, 25–45 % těsto, 45–60 % kynutí a tvarování, 60–85 % pečení, 85–100 % hotové pečivo. Výrobek a výrobní postup nejprve potvrdit. Návrh pracovní snímkové řady cca 96 WebP/AVIF snímků 1280 px; počet zvolit podle skutečné plynulosti a přenosového rozpočtu. Mobil: samostatná kratší sekvence nebo statický poster, šířka720 px. Musí zůstat jednotné světlo a směr kamery.",
+      "fallback": "assets/bakery-desktop.webp",
+      "player": "src/sequence-player.js; testována cache, závody a likvidace bitmap, nikoli finální film"
+    },
+    {
+      "id": "cleaning-pair",
+      "status": "Není skutečná dvojice před/po; nepředstírá se výsledek čištění.",
+      "fallback": "Označená ilustrační architektonická scéna"
+    },
+    {
+      "id": "diriqent",
+      "status": "Doména potvrzena; postava převzata z existujících lokálních podkladů. Veřejný web a popis funkcí zatím nejsou připraveny.",
+      "url": null,
+      "logo": null
+    },
+    {
+      "id": "diripos",
+      "status": "Zadavatel potvrdil doménu diripos.com, web i produktové podklady zatím chybí.",
+      "url": null,
+      "logo": null
+    },
+    {
+      "id": "mobile-app-service",
+      "status": "Samostatná služba vývoje mobilních aplikací není na ověřeném webu jednoznačně potvrzena, proto není veřejně slibována."
+    },
+    {
+      "id": "form-backend",
+      "status": "Lokální náhled, bez serverového odeslání a ukládání dat. Pro ostrý formulář doplnit server a odpovídající skutečné informace o zpracování dat."
+    }
+  ],
+  "motionVersion": 7,
+  "motion": {
+    "hero": "Pět původních alfa komponent má vlastní těžiště, výrazný počáteční rozptyl, natočení a hloubku. Scrollem se vrátí do původního umístění. Měkký glow zachovává ostrý původní znak.",
+    "digital": "Tři větve a panely; stávající postava Diriqenta se vynoří a narovná společně s prostřední kartou. Bez animace při omezení pohybu.",
+    "bakery": "Odkrytí a makropohyb jediného konzistentního obrazu. Organický film stále chybí.",
+    "cleaning": "Jedna diagonální hranice odstraní optické zamlžení ze stejného ilustračního interiéru.",
+    "development": "Rozložené vrstvy rozhraní se spojí, doplní obrazem a mobilní kompozicí.",
+    "mobile": "Samostatná mobilní choreografie: kratší portrétní úvod, postupné karty Diri, připnuté scény Cleaning a pekárny, vlastní viditelný průběh skládání webu. Stabilní svh, respektování omezení pohybu.",
+    "reduced": "Statické přístupné scény v normálním toku, bez WebGL importu při počátečním systémovém omezení pohybu."
+  },
+  "version": "7.0.0",
+  "chapterOrder": [
+    "JSPD Holding",
+    "Rodina Diri",
+    "JSPD Cleaning",
+    "Pekárna Litovel",
+    "Pojďme něco vytvořit"
+  ],
+  "colorDirection": [
+    "inkoustová modř / stříbrné světlo",
+    "tmavý indigo / tlumený ametyst",
+    "porcelánová bílá / modrošedá",
+    "slonová kost / espresso",
+    "kouřový bronz / champagne"
+  ],
+  "heroImplementation": "Původní holding-logo.png, skutečné oddělené vrstvy ve Three.js, abstraktní modré světelné pozadí. Žádný zlatý kruh.",
+  "paletteRefinement": "Původní loga beze změny, tlumená světla, sjednocené neutrály a navigace navazující na aktuální scénu.",
+  "logoMotion": "Pět původních alfa komponent má vlastní těžiště, výrazný počáteční rozptyl, natočení a hloubku. Scrollem se vrátí do původního umístění. Měkký glow zachovává ostrý původní znak."
+}

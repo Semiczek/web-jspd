@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm ci",
+  "buildCommand": "npm run check && npm run build && node scripts/check.mjs",
+  "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/:locale(cs|sk|en|de|es|fr)/cleaning", "destination": "/#cleaning", "permanent": false },
+    { "source": "/:locale(cs|sk|en|de|es|fr)/:section(bakery|cafe)", "destination": "/#pekarna", "permanent": false },
+    { "source": "/:locale(cs|sk|en|de|es|fr)/contact", "destination": "/#kontakt", "permanent": false },
+    { "source": "/:locale(cs|sk|en|de|es|fr)/:section(tech|construction|demo)", "destination": "/#vyvoj", "permanent": false },
+    { "source": "/:locale(cs|sk|en|de|es|fr)", "destination": "/", "permanent": false }
+  ]
+}

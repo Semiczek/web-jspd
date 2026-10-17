@@ -1,0 +1,6 @@
+Use case: stylized-concept
+Asset type: standalone photoreal architectural environment raster background for a cinematic Three.js scene, landscape 16:9.
+Primary request: An empty otherworldly monumental gallery built from dark brushed charcoal stone, restrained warm brass seams in the stone floor converge toward an architectural doorway around 70 percent of the image width. A tall rectangular open window in the right background reveals a beautiful atmospheric distant natural landscape.
+Composition: 16:9 wide frame, perspective camera at standing height, horizon at mid-height. The left half is very dark, clean and empty negative space suitable for white title copy added later. Keep the right foreground empty, because an actual procedural metallic 3D portal will be composited there later. The rectangular opening and distant view are in the right background. Architectural depth, realistic floor texture, exquisitely crafted minimal surfaces.
+Lighting: golden hour precise volumetric side light, very realistic premium CGI materials, dramatic but restrained quiet grandeur, subtle warm amber illumination across charcoal stone.
+Constraints: A clean standalone photoreal background. No circular portal, no rings, no objects, no sculptures, no people, no furniture, no logos, no text, no typography, no watermarks, no website or UI mockup.

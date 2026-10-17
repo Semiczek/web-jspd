@@ -1,68 +1,34 @@
-# JSPD Holding Web Starter
+# JSPD Holding — V7
 
-Hotový základ pro nový veřejný web v **Next.js App Router** s vícejazyčnou strukturou.
+Filmový web holdingu s původním logem JSPD, postavou Diriqenta a animacemi při posouvání. Obnovená verze V7 bez Křup & Go, včetně oprav mobilního časování a režimu omezeného pohybu.
 
-## Co je uvnitř
-- `app/[locale]` route-based vícejazyčný web
-- sekce:
-  - holding / homepage
-  - cleaning
-  - tech
-  - bakery
-  - cafe
-  - demo
-  - contact
-- jazyky:
-  - cs
-  - sk
-  - en
-  - de
-  - es
-  - fr
-- `next-intl` připravené pro další lokalizaci
+## Spuštění
 
-## Jak spustit
-```bash
-npm install
+Node.js 22 nebo novější:
+
+```sh
+npm ci
 npm run dev
 ```
 
-Pak otevři:
-- `http://localhost:3000/cs`
-- `http://localhost:3000/en`
-- atd.
+Náhled: http://127.0.0.1:5186. Po změně `src/projects.mjs` nebo `scripts/render.mjs` restartujte server.
 
-## Co doporučuju jako další krok
-1. Napojit reálné logo a brand assets
-2. Doplnit skutečné texty pro všechny jazyky
-3. Přidat reálné fotky
-4. Udělat formulář a obchodní CTA
-5. Udělat stránku dema hubu víc interaktivně
-6. Přidat SEO metadata pro jednotlivé sekce
+## Kontrola a sestavení
 
-## Důležité
-Tohle je **silný startovací základ**, ne finální produkční web.
-Je navržený tak, aby:
-- unesl více jazyků
-- unesl více firemních větví
-- šel dál rozvíjet bez překopání celé struktury
-
-## Doporučená architektura
-- veřejný web: Next.js
-- mobilní appky: Expo
-- backend / data: Supabase
-- demo hubu: samostatná veřejná route v tomto projektu nebo napojená komponenta
-
-OPRAVA NEXT-INTL
-- Tento fixed balíček už obsahuje:
-  - i18n/request.ts
-  - next.config.ts s next-intl pluginem
-
-SPUŠTĚNÍ NA PORTU 3002
-```bash
-npm install
-npm run dev -- -p 3002
+```sh
+npm run check
+npm run build
+node scripts/check.mjs
 ```
 
-Pak otevři:
-http://localhost:3002/cs
+Statický výstup vzniká v `dist/`. `src/` obsahuje obsah, styly a animace; `public/assets/` obrázky, fonty a licence. `design-sources/` uchovává zdroje ilustrací. Podrobnosti původní lokální předávky jsou v `README.txt` a `asset-manifest.json`.
+
+## Hosting a oddělení Hubu
+
+Tento repozitář `Semiczek/web-jspd` je napojený na Vercel projekt `project-z38dy` (`prj_2IR2Bht1S1jzHtlaXyjHX8h0ZdHA`) a doménu **test.jspd.cz**. Konfigurace `vercel.json` sestavuje statický web. Původní odkazy s jazykovým prefixem přesměrovává na odpovídající sekce; samostatné stránky `/routex1/` a `/routex2/` zůstávají zachované.
+
+Hub je jiný repozitář (`Semiczek/jspdhubhotovy`) a jiný Vercel projekt. Tento web nemá backend, Supabase klienta ani databázové migrace. Není třeba měnit DNS, nastavení nebo databázi Hubu. Doména `jspd.cz` nebyla při přípravě této změny připojena k projektu tohoto webu.
+
+Formulář zatím vytváří pouze náhled poptávky; nic neodesílá. Pro kontakt je k dispozici e-mailový odkaz. Náhled zachovává `noindex`.
+
+Původní verze před nahrazením: commit `15bd3d65dd41b32cb27b4f8da405746bd045e341`, větev `backup/before-jspd-v7-2026-10-17`. Návrat lze provést revertem nahrazovacího commitu bez přepisování historie.

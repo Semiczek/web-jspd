@@ -1,0 +1,4 @@
+Source: User-provided original Diriqent character, 01_Diriqent_celopostavovy.png.
+Method: built-in imagegen edit, transparent_background=true, 2026-10-07. Original preserved. Website uses an optimized 512 x 768 WebP with alpha.
+Edit prompt:
+Use case: background-extraction. Edit target: the provided existing Diriqent mascot render. Primary request: remove ONLY the gray studio background and floor, producing a clean true transparent-alpha cutout of the entire existing purple furry character. Preserve the EXACT original character silhouette, pose, facial expression, eyes, hair tufts, all purple fur details, thumbs-up hand, feet, black bowtie and its purple-cyan D logo. No redesign, no changes to anatomy, no additional elements, no lettering, no new lighting, no new halo or shadow. Keep the full character uncropped with small transparent margins. Output transparent RGBA PNG, detailed fine fur alpha edges.

@@ -4,6 +4,9 @@
   "installCommand": "npm ci",
   "buildCommand": "npm run check && npm run build && node scripts/check.mjs",
   "outputDirectory": "dist",
+  "headers": [
+    { "source": "/:path*", "has": [{ "type": "host", "value": "test.jspd.cz" }], "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }] }
+  ],
   "redirects": [
     { "source": "/:locale(cs|sk|en|de|es|fr)/cleaning", "destination": "/#cleaning", "permanent": false },
     { "source": "/:locale(cs|sk|en|de|es|fr)/:section(bakery|cafe)", "destination": "/#pekarna", "permanent": false },

@@ -14,6 +14,6 @@ export async function render() {
   ${p.status?`<p class="product-status">${esc(p.status)}</p>`:`<p class="product-domain">${esc(p.domain)}</p>`}
   <a class="text-link" href="${p.url||'#kontakt'}" ${p.url?'target="_blank" rel="noopener noreferrer"':`data-interest="${p.name}"`}>${p.url?'Otevřít '+esc(p.name):'Zeptat se na '+esc(p.name)}</a>
  </article>`).join('\n');
- const origin = new URL(process.env.SITE_ORIGIN || 'http://127.0.0.1:5186').origin;
+ const origin = new URL(process.env.SITE_ORIGIN || 'https://jspd.cz').origin;
  return html.replaceAll('{{SITE_ORIGIN}}',esc(origin)).replace(/<!-- PROJECT_LIST_START -->[\s\S]*?<!-- PROJECT_LIST_END -->/,list).replace('<!-- DIGITAL_PROJECTS -->',digital).replace('<!-- FOOTER_PROJECTS -->',projects.map(p=>`<a href="#${p.id}">${esc(p.name)}</a>`).join(''));
 }

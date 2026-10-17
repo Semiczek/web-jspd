@@ -27,7 +27,7 @@ function prepare(){
  const values=new FormData(form);const text=`Oblast: ${values.get('interest')}\nJméno: ${values.get('name').trim()}\nE-mail: ${values.get('email').trim()}${values.get('company').trim()?'\nFirma: '+values.get('company').trim():''}\n\n${values.get('message').trim()}`;
  document.querySelector('#message-preview').textContent=text;
  document.querySelector('#email-draft').href=`mailto:jspdholding@gmail.com?subject=${encodeURIComponent('Poptávka — '+values.get('interest'))}&body=${encodeURIComponent(text)}`;
- result.hidden=false;feedback.textContent='Náhled připraven. Nic nebylo odesláno.';
+ result.hidden=false;feedback.textContent='Zpráva je připravená. Otevřete ji ve svém e-mailu a odešlete nám ji.';
 }
 document.querySelector('#preview-button').addEventListener('click',prepare);form.addEventListener('submit',e=>{e.preventDefault();prepare();});
 form.addEventListener('input',()=>{result.hidden=true;feedback.textContent='';});

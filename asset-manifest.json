@@ -146,7 +146,7 @@
       "sourcePage": "https://www.diriqo.com/cs",
       "originalURL": "https://www.diriqo.com/diriqo-logo-icon.png",
       "license": "Existující identita zadavatele, výslovně požadované převzetí",
-      "status": "Ověřeno v živé hlavičce",
+      "status": "Archivní podklad; Diriqo není součástí aktuální prezentace.",
       "mobile": "Stejný soubor",
       "fallback": "HTML název diriqo"
     },
@@ -238,13 +238,30 @@
       ],
       "bytes": 121080,
       "sha256": "3862f4aa91b08c48fcf0e48d67b8b131ce7c30a85a823b21f576217807224f43",
-      "purpose": "Fialová postava Diriqenta v prostřední kartě rodiny Diri",
+      "purpose": "Postava Diriqenta v samostatné digitální scéně",
       "source": "Existující podklad zadavatele: diriqent/deliverables/ai-video-references-v002-diriqo-logo/01_Diriqent_celopostavovy.png",
       "method": "Built-in imagegen: průhledný výřez ze stávající postavy; prompt a PNG v design-sources/diriqent-character-cutout-v1.*. Zmenšeno na WebP s alfa kanálem.",
       "license": "Existující postava zadavatele, požadované použití na jeho webu",
       "status": "Vloženo do lokálního náhledu",
       "mobile": "Stejná postava, upravená velikost a odstupy",
-      "fallback": "Sémantický název Diriqent a kontaktní odkaz"
+      "fallback": "Sémantický název Diriqent a kontaktní odkaz",
+      "animation": "Tři fáze řízené scrollem: kreslení orbit, prostorový příchod postavy, usazení do finální kompozice. Mobil řídí průběh skutečnou viditelností portrétu."
+    },
+    {
+      "purpose": "Identita JSPD Tech a prostorový závěr stránky",
+      "sourcePage": "https://jspdtech.cz/",
+      "source": "https://jspdtech.cz/styles.css",
+      "status": "Wordmark a barevnost podle existujícího webu; dekorativní HTML/CSS kompozice webu a telefonu připravená pro tuto sekci.",
+      "fallback": "Statická scéna a přímý HTML odkaz na https://jspdtech.cz/."
+    },
+    {
+      "file": "assets/jspd-favicon.svg",
+      "bytes": 253671,
+      "sha256": "e5e152fe4255a0809122433fea1ddd19696816d762463e7a10ac9f1ecf364cda",
+      "purpose": "Ikona otevřené karty prohlížeče",
+      "source": "Původní assets/holding-logo.png; beze změny pixelů, pouze výřez modrého symbolu v SVG viewportu",
+      "license": "Existující identita zadavatele",
+      "status": "Nahrazuje původní zlaté J"
     }
   ],
   "missing": [
@@ -262,51 +279,44 @@
     },
     {
       "id": "diriqent",
-      "status": "Doména potvrzena; postava převzata z existujících lokálních podkladů. Veřejný web a popis funkcí zatím nejsou připraveny.",
+      "status": "Popis a stav ve vývoji ověřeny na diriqo.com/cs dne 2026-10-18. Samostatný veřejný web není ověřen, CTA vede na kontakt. Postava z podkladů zadavatele.",
       "url": null,
       "logo": null
-    },
-    {
-      "id": "diripos",
-      "status": "Zadavatel potvrdil doménu diripos.com, web i produktové podklady zatím chybí.",
-      "url": null,
-      "logo": null
-    },
-    {
-      "id": "mobile-app-service",
-      "status": "Samostatná služba vývoje mobilních aplikací není na ověřeném webu jednoznačně potvrzena, proto není veřejně slibována."
-    },
-    {
-      "id": "form-backend",
-      "status": "Lokální náhled, bez serverového odeslání a ukládání dat. Pro ostrý formulář doplnit server a odpovídající skutečné informace o zpracování dat."
     }
   ],
-  "motionVersion": 7,
+  "motionVersion": 10,
   "motion": {
-    "hero": "Pět původních alfa komponent má vlastní těžiště, výrazný počáteční rozptyl, natočení a hloubku. Scrollem se vrátí do původního umístění. Měkký glow zachovává ostrý původní znak.",
-    "digital": "Tři větve a panely; stávající postava Diriqenta se vynoří a narovná společně s prostřední kartou. Bez animace při omezení pohybu.",
-    "bakery": "Odkrytí a makropohyb jediného konzistentního obrazu. Organický film stále chybí.",
+    "hero": "Rozptýlené původní dílky se po obloucích složí do symbolu, poté do celé identity JSPD. Na desktopu logo přejde nad stále čitelný text. Krátká okna mají vlastní kompozici; mobil běžný tok.",
+    "digital": "Tři fáze řízené scrollem: kreslení orbit, prostorový příchod postavy, usazení do finální kompozice. Mobil řídí průběh skutečnou viditelností portrétu.",
+    "bakery": "Diagonální teplá clona, světelný přejezd a změna měřítka existující ilustrace. Text a odkazy zůstávají stabilní; autentický film není k dispozici.",
     "cleaning": "Jedna diagonální hranice odstraní optické zamlžení ze stejného ilustračního interiéru.",
-    "development": "Rozložené vrstvy rozhraní se spojí, doplní obrazem a mobilní kompozicí.",
-    "mobile": "Samostatná mobilní choreografie: kratší portrétní úvod, postupné karty Diri, připnuté scény Cleaning a pekárny, vlastní viditelný průběh skládání webu. Stabilní svh, respektování omezení pohybu.",
-    "reduced": "Statické přístupné scény v normálním toku, bez WebGL importu při počátečním systémovém omezení pohybu."
+    "mobile": "Běžný tok všech sekcí bez připnutí. Menší logo, čitelné texty, obrázek Cleaning ve vlastní kompozici. Pohybová kontrola v hlavičce.",
+    "reduced": "Statické přístupné scény v normálním toku, bez WebGL importu při počátečním systémovém omezení pohybu.",
+    "tech": "Rozložené části prohlížeče se složí do drátěného návrhu, barevný přejezd odkryje hotové rozhraní a následně přijede telefon a plovoucí komponenta. Průběh funguje obousměrně a zastaví se po dorovnání scrollu."
   },
   "version": "7.0.0",
   "chapterOrder": [
     "JSPD Holding",
-    "Rodina Diri",
+    "Diriqent",
     "JSPD Cleaning",
     "Pekárna Litovel",
-    "Pojďme něco vytvořit"
+    "JSPD Tech"
   ],
   "colorDirection": [
     "inkoustová modř / stříbrné světlo",
     "tmavý indigo / tlumený ametyst",
     "porcelánová bílá / modrošedá",
     "slonová kost / espresso",
-    "kouřový bronz / champagne"
+    "tmavá zelená / limetkový akcent, podle jspdtech.cz"
   ],
   "heroImplementation": "Původní holding-logo.png, skutečné oddělené vrstvy ve Three.js, abstraktní modré světelné pozadí. Žádný zlatý kruh.",
   "paletteRefinement": "Původní loga beze změny, tlumená světla, sjednocené neutrály a navigace navazující na aktuální scénu.",
-  "logoMotion": "Pět původních alfa komponent má vlastní těžiště, výrazný počáteční rozptyl, natočení a hloubku. Scrollem se vrátí do původního umístění. Měkký glow zachovává ostrý původní znak."
+  "logoMotion": "Pět původních alfa komponent má vlastní těžiště, výrazný počáteční rozptyl, natočení a hloubku. Scrollem se vrátí do původního umístění. Měkký glow zachovává ostrý původní znak.",
+  "copyVerified": "2026-10-18",
+  "copySources": [
+    "https://www.diriqo.com/cs",
+    "https://www.jspd.cz/",
+    "https://pekarnalitovel.cz/",
+    "https://jspdtech.cz/"
+  ]
 }

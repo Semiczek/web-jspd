@@ -1,6 +1,6 @@
 # JSPD Holding — V7
 
-Filmový web holdingu s původním logem JSPD, postavou Diriqenta a animacemi při posouvání. Obnovená verze V7 bez Křup & Go, včetně oprav mobilního časování a režimu omezeného pohybu.
+Filmový web holdingu s původním logem JSPD, samostatnou postavou Diriqenta a animacemi při posouvání. Závěr představuje JSPD Tech s animovaným skládáním webu a telefonu. Mobil používá běžný tok stránky; režim omezeného pohybu zachovává čitelný statický obsah.
 
 ## Spuštění
 
@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Náhled: http://127.0.0.1:5186. Po změně `src/projects.mjs` nebo `scripts/render.mjs` restartujte server.
+Náhled: http://127.0.0.1:5186. Po změně renderovacích modulů (`src/*.mjs`, `scripts/render.mjs`) restartujte server.
 
 ## Kontrola a sestavení
 
@@ -29,6 +29,6 @@ Tento repozitář `Semiczek/web-jspd` je napojený na Vercel projekt `project-z3
 
 Hub je jiný repozitář (`Semiczek/jspdhubhotovy`) a jiný Vercel projekt. Tento web nemá backend, Supabase klienta ani databázové migrace. Není třeba měnit DNS, nastavení nebo databázi Hubu. Doména `jspd.cz` nebyla při přípravě této změny připojena k projektu tohoto webu.
 
-Formulář připravuje e-mail s poptávkou, který návštěvník odešle ze svého e-mailového klienta. Web nemá server pro odesílání pošty. Produkční metadata, canonical a sitemap používají `https://jspd.cz/`; testovací doména má HTTP hlavičku `X-Robots-Tag: noindex, nofollow`.
+Kontaktní odkazy používají e-mailového klienta; hlavní výzva vede na `https://jspdtech.cz/`. Web nemá formulář ani server pro odesílání pošty. Produkční metadata, canonical a sitemap používají `https://jspd.cz/`; testovací doména má HTTP hlavičku `X-Robots-Tag: noindex, nofollow`.
 
 Původní verze před nahrazením: commit `15bd3d65dd41b32cb27b4f8da405746bd045e341`, větev `backup/before-jspd-v7-2026-10-17`. Návrat lze provést revertem nahrazovacího commitu bez přepisování historie.

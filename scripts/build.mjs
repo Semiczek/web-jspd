@@ -6,7 +6,7 @@ import './vendor.mjs';
 const root = fileURLToPath(new URL('../', import.meta.url));
 await mkdir(path.join(root, 'dist'), { recursive: true });
 await cp(path.join(root, 'public'), path.join(root, 'dist'), { recursive: true });
-for (const file of ['style.css','motion.css','worlds.css','mobile-motion.css','fonts.css','site.js','motion.js','portal.js','sequence-player.js']) await cp(path.join(root, 'src', file), path.join(root, 'dist', file));
+for (const file of ['style.css','motion.css','worlds.css','mobile-motion.css','brand-focus.css','tech-cinema.css','diri-cinema.css','cinema.css','fonts.css','site.js','motion.js','portal.js','sequence-player.js']) await cp(path.join(root, 'src', file), path.join(root, 'dist', file));
 await unlink(path.join(root,'dist/projects.mjs')).catch(e=>{if(e.code!=='ENOENT')throw e;});
 await writeFile(path.join(root, 'dist/index.html'), await render());
 console.log('Build ready: dist/');

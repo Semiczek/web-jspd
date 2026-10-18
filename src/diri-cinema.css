@@ -1,0 +1,186 @@
+/* Three scroll phases: draw the space, enter from depth, settle into the light.
+   The scene controller supplies --diri-draw, --diri-enter and --diri-settle.
+   Values default to the complete composition, including without JavaScript. */
+.diri-focus .diri-portrait {
+  perspective: 1000px;
+  perspective-origin: 50% 46%;
+}
+.diri-focus .diri-portrait > img {
+  animation: none;
+  translate: none;
+  rotate: none;
+  scale: none;
+  transform: none;
+  transform-origin: 50% 80%;
+  backface-visibility: hidden;
+  filter: drop-shadow(0 24px 24px #080b2280) drop-shadow(0 0 22px #bf8eff24);
+}
+.diri-focus .diri-aura {
+  opacity: .82;
+  transform: scale(1);
+  background: radial-gradient(ellipse at 50% 53%, #c48cff45, #7642bc25 38%, transparent 68%);
+}
+.diri-cinema {
+  position: absolute;
+  inset: -7% -9% 4%;
+  z-index: 1;
+  pointer-events: none;
+  transform-style: preserve-3d;
+}
+.diri-cinema-traces {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform-origin: 50% 50%;
+  filter: drop-shadow(0 0 5px #c5a0ff55);
+}
+.diri-cinema-track path {
+  stroke: #cbb4ff;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+.diri-cinema-track-main { opacity: .58; }
+.diri-cinema-track-cross { opacity: .34; }
+.diri-cinema-track-cross path { stroke: #81c8f2; }
+.diri-cinema-track-signal { opacity: .42; }
+.diri-cinema-track-signal path { stroke-width: 1; }
+.diri-cinema-nodes { fill: #e9d9ff; opacity: .8; }
+.diri-cinema-floor {
+  position: absolute;
+  width: 115%;
+  height: 58%;
+  left: -7.5%;
+  bottom: -7%;
+  transform-origin: 50% 50%;
+  transform: perspective(650px) rotateX(68deg);
+  background-image: linear-gradient(#c6a1ff39 1px, transparent 1px),
+    linear-gradient(90deg, #c6a1ff39 1px, transparent 1px);
+  background-size: 38px 38px;
+  mask-image: radial-gradient(ellipse, #000 12%, transparent 69%);
+  opacity: .65;
+}
+.diri-cinema-landing {
+  position: absolute;
+  left: 14%;
+  bottom: 5%;
+  width: 72%;
+  height: 17%;
+  border: 1px solid #d4b9ff80;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #c598ff25, transparent 66%);
+  box-shadow: 0 0 28px #b16bff25, inset 0 0 26px #bb84ff16;
+  opacity: .65;
+}
+
+/* The first stroke opens the space; the crossing orbit follows it. */
+.motion-enabled .diri-focus .diri-cinema-traces {
+  transform: rotate(calc(-28deg + var(--diri-draw, 1)*28deg))
+    scale(calc(.45 + var(--diri-draw, 1)*.55));
+}
+.motion-enabled .diri-focus .diri-cinema-track-main path {
+  stroke-dashoffset: calc(1 - var(--diri-draw, 1));
+}
+.motion-enabled .diri-focus .diri-cinema-track-cross path {
+  stroke-dashoffset: calc(1 - clamp(0, calc(var(--diri-draw, 1)*1.6 - .6), 1));
+}
+.motion-enabled .diri-focus .diri-cinema-track-signal path {
+  stroke-dashoffset: calc(1 - var(--diri-settle, 1));
+}
+.motion-enabled .diri-focus .diri-cinema-nodes {
+  opacity: calc(var(--diri-settle, 1)*.8);
+}
+.motion-enabled .diri-focus .diri-cinema-floor {
+  opacity: calc(var(--diri-draw, 1)*.65);
+  transform: perspective(650px) rotateX(calc(82deg - var(--diri-draw, 1)*14deg))
+    translateY(calc((1 - var(--diri-draw, 1))*100px))
+    scale(calc(.45 + var(--diri-draw, 1)*.55));
+}
+.motion-enabled .diri-focus .diri-orbit-one {
+  opacity: calc(.1 + var(--diri-draw, 1)*.7 - var(--diri-settle, 1)*.45);
+  transform: rotateX(calc(70deg - var(--diri-draw, 1)*30deg))
+    rotateZ(calc(-110deg + var(--diri-draw, 1)*66deg + var(--diri-settle, 1)*20deg))
+    scale(calc(.25 + var(--diri-draw, 1)*.75));
+}
+.motion-enabled .diri-focus .diri-orbit-two {
+  opacity: calc(.1 + var(--diri-draw, 1)*.6 - var(--diri-settle, 1)*.35);
+  transform: rotateY(calc(65deg - var(--diri-enter, 1)*65deg))
+    rotateZ(calc(112deg - var(--diri-draw, 1)*64deg - var(--diri-settle, 1)*24deg))
+    scale(calc(.3 + var(--diri-draw, 1)*.7));
+}
+
+/* Entry overshoots slightly; the final phase lands the figure and its shadow. */
+.motion-enabled .diri-focus .diri-portrait > img {
+  translate: none;
+  rotate: none;
+  scale: none;
+  opacity: calc(.22 + var(--diri-enter, 1)*.78);
+  transform: translate3d(calc((1 - var(--diri-enter, 1))*105px),
+    calc((1 - var(--diri-enter, 1))*170px - (var(--diri-enter, 1) - var(--diri-settle, 1))*24px),
+    calc((1 - var(--diri-enter, 1))*-300px))
+    rotateY(calc((1 - var(--diri-enter, 1))*-54deg))
+    rotateZ(calc((1 - var(--diri-enter, 1))*10deg))
+    scale(calc(.4 + var(--diri-enter, 1)*.68 - var(--diri-settle, 1)*.08));
+}
+.motion-enabled .diri-focus .diri-aura {
+  opacity: calc(.08 + var(--diri-draw, 1)*.22 + var(--diri-enter, 1)*.62 - var(--diri-settle, 1)*.1);
+  transform: scale(calc(.25 + var(--diri-enter, 1)*.95 - var(--diri-settle, 1)*.2));
+}
+.motion-enabled .diri-focus .diri-cinema-landing {
+  opacity: calc(var(--diri-enter, 1)*.9 - var(--diri-settle, 1)*.25);
+  transform: scale(calc(.2 + var(--diri-enter, 1)*.5 + var(--diri-settle, 1)*.3));
+}
+
+@media(max-width:700px) {
+  .diri-cinema { inset: -2% -5% 4%; }
+  .diri-cinema-floor { background-size: 30px 30px; }
+  .motion-enabled .diri-focus .diri-portrait > img {
+    transform: translate3d(calc((1 - var(--diri-enter, 1))*40px),
+      calc((1 - var(--diri-enter, 1))*120px - (var(--diri-enter, 1) - var(--diri-settle, 1))*16px),
+      calc((1 - var(--diri-enter, 1))*-220px))
+      rotateY(calc((1 - var(--diri-enter, 1))*-48deg))
+      rotateZ(calc((1 - var(--diri-enter, 1))*8deg))
+      scale(calc(.4 + var(--diri-enter, 1)*.66 - var(--diri-settle, 1)*.06));
+  }
+}
+
+/* No animated phase can hide the finished artwork in either reduced mode. */
+.motion-reduced .diri-focus .diri-portrait {
+  --diri-draw: 1 !important;
+  --diri-enter: 1 !important;
+  --diri-settle: 1 !important;
+}
+.motion-reduced .diri-focus .diri-portrait > img,
+.motion-reduced .diri-focus .diri-aura,
+.motion-reduced .diri-focus .diri-orbit {
+  animation: none !important;
+  transition: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: none !important;
+  transform: none !important;
+  opacity: 1;
+}
+@media(prefers-reduced-motion:reduce) {
+  .diri-focus .diri-portrait {
+    --diri-draw: 1 !important;
+    --diri-enter: 1 !important;
+    --diri-settle: 1 !important;
+  }
+  .diri-focus .diri-portrait > img,
+  .diri-focus .diri-aura,
+  .diri-focus .diri-orbit {
+    animation: none !important;
+    transition: none !important;
+    translate: none !important;
+    rotate: none !important;
+    scale: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

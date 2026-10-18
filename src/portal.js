@@ -3,11 +3,11 @@ const smooth=(a,b,x)=>{const t=THREE.MathUtils.clamp((x-a)/(b-a),0,1);return t*t
 // Deliberate initial poses, in logo units. Each fragment pivots around its own
 // original alpha centroid and returns exactly to its original pixel placement.
 const scatter=[
- {x:-1.5,y:.45,z:.45,rx:.22,ry:-.32,rz:-.72},
- {x:-.55,y:1.05,z:-.55,rx:-.28,ry:.38,rz:.67},
- {x:.25,y:-.85,z:.4,rx:.2,ry:-.3,rz:-.55},
- {x:-1.1,y:-1.15,z:-.35,rx:-.23,ry:.33,rz:.82},
- {x:1.25,y:.6,z:-.45,rx:.25,ry:.28,rz:-.62}
+ {x:-2.25,y:.75,z:1.6,rx:.48,ry:-.78,rz:-1.12},
+ {x:-.55,y:1.65,z:-1.45,rx:-.62,ry:.9,rz:1.04},
+ {x:.65,y:-1.55,z:1.2,rx:.52,ry:-.72,rz:-.92},
+ {x:-1.85,y:-1.9,z:-1.1,rx:-.58,ry:.83,rz:1.25},
+ {x:1.95,y:1.15,z:-1.4,rx:.62,ry:.75,rz:-1.04}
 ];
 
 // Original RGBA pixels, separated by connected alpha components. No tracing.
@@ -69,21 +69,31 @@ export async function createPortal(canvas){
   if(disposed||lost)return;progress=p;pointerX=px;pointerY=py;
   const box=canvas.getBoundingClientRect();if(!box.width||!box.height)return;
   if(w!==box.width||h!==box.height){w=box.width;h=box.height;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
-  const mobile=w<=600,tablet=w<=900,assembled=smooth(.015,.42,p),merge=smooth(.47,.81,p),arrival=smooth(.81,1,p),viewHeight=2*Math.tan(35*Math.PI/360)*10,viewWidth=viewHeight*w/h;
+  const mobile=matchMedia('(max-width:700px)').matches,tablet=matchMedia('(max-width:1099px)').matches,assembled=smooth(.015,.42,p),merge=mobile||matchMedia('(min-height:600px)').matches?smooth(.47,.81,p):0,arrival=smooth(.81,1,p),viewHeight=2*Math.tan(35*Math.PI/360)*10,viewWidth=viewHeight*w/h;
   const compact=mobile&&h<740;
-  const restingScale=mobile?(compact?.32:.39):tablet?.7:.98;
-  const scatteredScale=mobile?(compact?.23:.27):Math.min(restingScale*.78,viewWidth*.4/5.2);
-  const initialScale=THREE.MathUtils.lerp(scatteredScale,restingScale,assembled),finalScale=Math.min(mobile?.29:.65,viewWidth*.75/8.7),scale=THREE.MathUtils.lerp(initialScale,finalScale,merge);
+  const restingScale=mobile?viewHeight*(compact?106:140)/h/4:tablet?.7:.98;
+  const scatteredScale=mobile?restingScale*.58:Math.min(restingScale*.68,viewWidth*.4/7.4);
+  const copy=canvas.closest('.hero-stage').querySelector('.hero-copy');
+  const eyebrow=copy.querySelector('.eyebrow');
+  const naturalBottom=copy.offsetTop+copy.offsetHeight-parseFloat(getComputedStyle(copy).paddingBottom);
+  const copyShift=mobile?0:Math.max(0,Math.min(h*.22,h-65-naturalBottom));
+  const logoHeight=mobile?0:Math.max(50,Math.min(h*.36,copy.offsetTop+eyebrow.offsetTop+copyShift-135));
+  const targetY=mobile?0:viewHeight*(.5-(105+logoHeight/2)/h);
+  const finalScale=mobile?Math.min(.29,viewWidth*.7/8.7):Math.min(.75,logoHeight/h*viewHeight/4,viewWidth*.73/8.7);
+  canvas.closest('.hero').style.setProperty('--copy-shift',`${copyShift}px`);
+  canvas.closest('.hero').style.setProperty('--logo-caption-y',`${105+logoHeight+12}px`);
+  const initialScale=THREE.MathUtils.lerp(scatteredScale,restingScale,assembled),scale=THREE.MathUtils.lerp(initialScale,finalScale,merge);
   group.scale.setScalar(scale);
-  const initialX=mobile?0:viewWidth*.27,initialY=mobile?viewHeight*(compact?.22:.25):0;
-  group.position.set(THREE.MathUtils.lerp(initialX,-2.7*finalScale,merge),THREE.MathUtils.lerp(initialY,viewHeight*.22,merge),0);
+  const initialX=mobile?0:viewWidth*.27,initialY=mobile?viewHeight*(.5-(compact?138:165)/h):0;
+  group.position.set(THREE.MathUtils.lerp(initialX,-2.9*finalScale,merge),THREE.MathUtils.lerp(initialY,mobile?initialY:targetY,merge),0);
   group.rotation.set(py*.025*(1-merge),(-.13+px*.045)*(1-merge),-.025*(1-merge));
   for(let i=0;i<pieces.length;i++){
    const t=1-smooth(.01+i*.012,.34+i*.02,p),{mesh,pivot,home,pose}=pieces[i];
-   pivot.position.set(home.x+pose.x*t,home.y+pose.y*t,pose.z*t);
+   const arc=Math.sin(t*Math.PI);
+   pivot.position.set(home.x+pose.x*t+arc*(i%2?.32:-.32),home.y+pose.y*t+arc*.35,pose.z*t);
    pivot.rotation.set(t*pose.rx,t*pose.ry,t*pose.rz);mesh.material.opacity=1-arrival*.04;
   }
-  wordmark.position.set(518/450*4+(1-merge)*.6,-20/450*4,0);wordmark.material.opacity=smooth(.56,.81,p);renderer.render(scene,camera);
+  wordmark.position.set(518/450*4+(1-merge)*.6,-20/450*4,0);wordmark.material.opacity=merge?smooth(.65,.84,p):0;renderer.render(scene,camera);
  }
  function onLost(event){event.preventDefault();lost=true;canvas.closest('.hero').classList.remove('webgl-ready');document.documentElement.classList.add('no-webgl');}
  function onRestored(){lost=false;paint();canvas.closest('.hero').classList.add('webgl-ready');document.documentElement.classList.remove('no-webgl');}

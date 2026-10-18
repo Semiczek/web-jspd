@@ -25,9 +25,9 @@ Statický výstup vzniká v `dist/`. `src/` obsahuje obsah, styly a animace; `pu
 
 ## Hosting a oddělení Hubu
 
-Tento repozitář `Semiczek/web-jspd` je napojený na Vercel projekt `project-z38dy` (`prj_2IR2Bht1S1jzHtlaXyjHX8h0ZdHA`) a doménu **test.jspd.cz**. Konfigurace `vercel.json` sestavuje statický web. Původní odkazy s jazykovým prefixem přesměrovává na odpovídající sekce; samostatné stránky `/routex1/` a `/routex2/` zůstávají zachované.
+Tento repozitář `Semiczek/web-jspd` je napojený na Vercel projekt `project-z38dy` (`prj_2IR2Bht1S1jzHtlaXyjHX8h0ZdHA`). Větev `main` nasazuje produkční web **https://jspd.cz/**; `www.jspd.cz` přesměrovává kódem 308 na hlavní adresu. `test.jspd.cz` zůstává připojený ke stejnému projektu. Konfigurace `vercel.json` sestavuje statický web. Původní odkazy s jazykovým prefixem přesměrovává na odpovídající sekce; samostatné stránky `/routex1/` a `/routex2/` zůstávají zachované.
 
-Hub je jiný repozitář (`Semiczek/jspdhubhotovy`) a jiný Vercel projekt. Tento web nemá backend, Supabase klienta ani databázové migrace. Není třeba měnit DNS, nastavení nebo databázi Hubu. Doména `jspd.cz` nebyla při přípravě této změny připojena k projektu tohoto webu.
+Hub je jiný repozitář (`Semiczek/jspdhubhotovy`) a jiný Vercel projekt. Tento web nemá backend, Supabase klienta ani databázové migrace. Při připojení domény 18. 10. 2026 zůstaly záznamy Hubu a pošty beze změny. DNS servery a registrace zůstávají u FORPSI; měnily se pouze webové záznamy. Zástupný záznam ostatních subdomén zachovává původní IP hostingu.
 
 Kontaktní odkazy používají e-mailového klienta; hlavní výzva vede na `https://jspdtech.cz/`. Web nemá formulář ani server pro odesílání pošty. Produkční metadata, canonical a sitemap používají `https://jspd.cz/`; testovací doména má HTTP hlavičku `X-Robots-Tag: noindex, nofollow`.
 

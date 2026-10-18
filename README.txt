@@ -1,3 +1,6 @@
+ARCHIVNÍ PŘEDÁVKA — AKTUÁLNÍ NASAZENÍ A OBSAH V README.md
+Následující poznámky zachycují původní lokální verzi, nikoli nynější stav.
+
 JSPD HOLDING — POHYBOVÝ KONCEPT V7
 7. 10. 2026
 

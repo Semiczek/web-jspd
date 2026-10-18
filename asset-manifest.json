@@ -1,7 +1,9 @@
 {
   "date": "2026-10-07",
   "domainTarget": "jspd.cz",
-  "published": false,
+  "published": true,
+  "publishedAt": "2026-10-18",
+  "publishedUrl": "https://jspd.cz/",
   "entries": [
     {
       "file": "assets/hero-desktop.webp",
